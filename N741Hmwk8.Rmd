@@ -8,7 +8,7 @@ output:
   pdf_document: default
   github_document: default
 ---
-##
+##This assignment is labeled N741Hmwk8.Rmd at https://github.com/medman1025/N741hmwk8.git
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -301,15 +301,15 @@ plot(pr.out$x[,1],pr.out$x[,2],
 
 2. In the overall dataset, when looking at the loadings plot, which variables cluster together? which variables do not lie with that cluster?
 
-##Mitoses variable is far away from all of the clusters. Bare nuclei and bland chromation are very close together. Uniformity of cell size and uniformity of cell shape are very close together. Marginal adhesion, single cell size, and normal nucleoli are very close together. 
+##The Mitoses variable is far away from all of the clusters with higher loading on Component 1 and 2 than the other variables. Bare nuclei and bland chromation are very close together. Uniformity of cell size and uniformity of cell shape are very close together. Marginal adhesion, single cell size, and normal nucleoli are very close together. 
 
 3. How do the variable clusters seen in the loading plots for the Benign data subset and Malignant subset differ? and how are they similar if at all?
 
-##In the benign subset, mitoses and clump thickness are far from the other variables. Uniformity of cell size, uniformity of cell shape, and single cell size are all close together in one cluster. In the malignant subset, bare nuclei and clump thickness are far from the other variables. Cell size and cell shape are close together in one cluster. Bland chromatin and marginal adhesion are close together in one cluster. For both subsets, the x-axis PC 1 values are all negative.
+##In the benign subset, mitoses and clump thickness are far from the other variables with mitosis having higher loading in Component 1 and 2. Uniformity of cell size, uniformity of cell shape, and single cell size are all close together in one cluster. In the malignant subset, bare nuclei and clump thickness are far from the other variables. Cell size and cell shape are close together in one cluster. Bland chromatin and marginal adhesion are close together in one cluster. For both subsets, the x-axis PC 1 values are all negative.
 
 4. Is using 2 principal components reasonable for summarizing the variability seen in this Breast Cancer dataset with 9 measurements? Explain your reasoning for (a) the overall dataset, (b) the Benign subset and (c) the Malignant subset
 
-##In the overall dataset, the loading plot is very difficult to read whereas the loading plot in the benign and malignant subsets is much easier to read when looking at the variables. In the scores plot of the overall dataset, it is easy to see where the red and blue dots differentiate, but the middle where some of these dots meet is difficult to discern. The scores plot of the benign and malignant subsets is very easy to identify patterns in the individual subset.
+##In the overall dataset, the loading plot is very difficult to read whereas the loading plot in the benign and malignant subsets is much easier to read when looking at the variables. The variance bar plot in the overall data shows that the most variance is in Component 1. In the scores plot of the overall dataset, it is easy to see where the red and blue dots differentiate, but the middle where some of these dots meet is difficult to discern. The scores plot of the benign and malignant subsets is very easy to identify patterns in the individual subset with only one color represented. Using Components 1 and 2 best summarizes the variability found in the datasets. In the benign subset, the majority of variance is found in Component 1. In the malignant subset, the majority of variance is still found in Component 1, but 2 and 3 are much higher in this subset than the values found in the benign subset.
 
 5. While PCA is an unsupervised data analysis method (i.e. no "target" class information is used in the analysis), do you think the 2 PCs extracted do a good job of helping to distinguish Benign cases from Malignant cases (i.e. look back at the overall dataset Scores Plot). Explain your rationale.
 
